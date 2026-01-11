@@ -58,7 +58,7 @@
         .hero {
             background-color: #1a472a;
             color: white;
-            padding: 4rem 2rem;
+            padding: 2rem 2rem;
             text-align: center;
         }
 
@@ -83,21 +83,18 @@
         }
 
         .content-section {
-            background: white;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 0;
         }
 
         .image-container {
             position: relative;
-            width: 100vw;
+            width: 100%;
             height: 500px;
-            margin-left: calc(-50vw + 50%);
-            margin-right: calc(-50vw + 50%);
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin: 0;
             overflow: hidden;
         }
 
@@ -124,17 +121,18 @@
         .welcome-text {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #555;
+            color: #333;
             text-align: center;
-            margin: 2rem 0;
+            margin: 3rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
         }
 
         .highlight-box {
             background-color: #1a472a;
             color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
+            padding: 3rem 2rem;
+            margin: 0;
             text-align: center;
         }
 
@@ -202,26 +200,22 @@
         <p class="tagline">Scottish Highland piping and drumming on the Palouse since 1974</p>
     </div>
 
-    <div class="container">
-        <div class="content-section">
-            <div class="image-container">
-                <div class="slideshow" id="slideshow">
-                    <!-- Images will be dynamically inserted here by JavaScript -->
-                </div>
-            </div>
-
-            <p class="welcome-text">
-                Welcome to the Border Highlanders Pipes & Drums! For over five decades, we have been
-                proudly bringing the rich traditions of Scottish Highland music to the Palouse region.
-                Our band celebrates the heritage of Scotland through the stirring sounds of bagpipes
-                and the thundering rhythm of drums.
-            </p>
-
-            <div class="highlight-box">
-                <h2>Preserving Tradition Since 1974</h2>
-                <p>Join us in celebrating Scottish culture through music, performance, and community.</p>
-            </div>
+    <div class="image-container">
+        <div class="slideshow" id="slideshow">
+            <!-- Images will be dynamically inserted here by JavaScript -->
         </div>
+    </div>
+
+    <p class="welcome-text">
+        Welcome to the Border Highlanders Pipes & Drums! For over five decades, we have been
+        proudly bringing the rich traditions of Scottish Highland music to the Palouse region.
+        Our band celebrates the heritage of Scotland through the stirring sounds of bagpipes
+        and the thundering rhythm of drums.
+    </p>
+
+    <div class="highlight-box">
+        <h2>Preserving Tradition Since 1974</h2>
+        <p>Join us in celebrating Scottish culture through music, performance, and community.</p>
     </div>
 
     <footer>
