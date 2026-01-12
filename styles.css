@@ -223,7 +223,7 @@ body.page-burns .content-section {
 }
 
 .content-section h2 {
-    color: #1a472a;
+    color: var(--text-color);
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
@@ -436,7 +436,7 @@ body.page-home .content-section {
 .radio-option label {
     margin: 0;
     font-weight: normal;
-    color: #333;
+    color: var(--text-color);
     cursor: pointer;
 }
 
