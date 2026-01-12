@@ -530,11 +530,55 @@ footer {
 }
 
 /* Tunes page styles */
+.instrument-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.instrument-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.instrument-button img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.instrument-button.active {
+    opacity: 1;
+}
+
+.instrument-button.active img {
+    height: 120px;
+}
+
+.instrument-button:hover {
+    opacity: 0.8;
+}
+
 .tunes-protected {
     display: none;
 }
 
 .tunes-protected.unlocked {
+    display: block;
+}
+
+.pipes-content,
+.drums-content {
+    display: none;
+}
+
+.pipes-content.active,
+.drums-content.active {
     display: block;
 }
 
