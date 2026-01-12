@@ -26,4 +26,34 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('vandalized', 'true');
         }
     });
+
+    // Skeleton bagpipe animation on logo click
+    const heroLogo = document.querySelector('.hero-logo');
+    if (heroLogo) {
+        heroLogo.addEventListener('click', function() {
+            // Create the animated skeleton
+            const skeleton = document.createElement('img');
+            skeleton.src = 'images/skeletonBagpipe.png';
+            skeleton.style.position = 'fixed';
+            skeleton.style.top = '20px';
+            skeleton.style.left = '-100px';
+            skeleton.style.height = '80px';
+            skeleton.style.width = 'auto';
+            skeleton.style.zIndex = '1000';
+            skeleton.style.transition = 'left 1s linear';
+            skeleton.style.pointerEvents = 'none';
+
+            document.body.appendChild(skeleton);
+
+            // Trigger animation after a brief delay
+            setTimeout(() => {
+                skeleton.style.left = '100vw';
+            }, 10);
+
+            // Remove the skeleton after animation completes
+            setTimeout(() => {
+                skeleton.remove();
+            }, 1100);
+        });
+    }
 });
