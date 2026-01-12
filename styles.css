@@ -254,7 +254,7 @@ body.page-burns .content-section h2 {
 .content-section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
@@ -271,7 +271,7 @@ body.page-burns .content-section p {
 .content-section li {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 0.75rem;
 }
 
@@ -317,7 +317,7 @@ body.page-home .content-section {
 .welcome-text {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #808080;
+    color: var(--text-color);
     text-align: center;
     margin: 3rem auto;
     max-width: 1200px;
@@ -340,7 +340,7 @@ body.page-home .content-section {
 .intro-text {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 2rem;
 }
 
@@ -361,7 +361,7 @@ body.page-home .content-section {
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     font-style: italic;
-    color: #666;
+    color: var(--text-color);
 }
 
 /* Burns Night specific styles */
