@@ -40,7 +40,17 @@
         </div>
     </div>
 
-    <div class="container tunes-protected" id="tunes-content">
+    <div class="tunes-protected" id="tunes-content">
+        <div class="instrument-selector">
+            <div class="instrument-button active" id="pipes-button" data-instrument="pipes">
+                <img src="images/skeletonBagpipe.png" alt="Bagpipes">
+            </div>
+            <div class="instrument-button" id="drums-button" data-instrument="drums">
+                <img src="images/skeletonDrum.png" alt="Drums">
+            </div>
+        </div>
+
+        <div class="container pipes-content active" id="pipes-content">
         <div class="tunes-section">
             <h3>Scotland the Brave / Rowan Tree</h3>
             <table class="tunes-table">
@@ -443,6 +453,25 @@
                 </tbody>
             </table>
         </div>
+        </div>
+
+        <div class="container drums-content" id="drums-content">
+            <div class="tunes-section">
+                <h3>Drum Scores</h3>
+                <table class="tunes-table">
+                    <thead>
+                        <tr>
+                            <th>TEST</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LINK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -513,6 +542,39 @@
                 } else {
                     showError();
                 }
+            });
+        })();
+
+        // Instrument toggle functionality
+        (function() {
+            const pipesButton = document.getElementById('pipes-button');
+            const drumsButton = document.getElementById('drums-button');
+            const pipesContent = document.getElementById('pipes-content');
+            const drumsContent = document.getElementById('drums-content');
+
+            function switchInstrument(instrument) {
+                if (instrument === 'pipes') {
+                    // Activate pipes
+                    pipesButton.classList.add('active');
+                    drumsButton.classList.remove('active');
+                    pipesContent.classList.add('active');
+                    drumsContent.classList.remove('active');
+                } else {
+                    // Activate drums
+                    drumsButton.classList.add('active');
+                    pipesButton.classList.remove('active');
+                    drumsContent.classList.add('active');
+                    pipesContent.classList.remove('active');
+                }
+            }
+
+            // Add click event listeners
+            pipesButton.addEventListener('click', function() {
+                switchInstrument('pipes');
+            });
+
+            drumsButton.addEventListener('click', function() {
+                switchInstrument('drums');
             });
         })();
     </script>
